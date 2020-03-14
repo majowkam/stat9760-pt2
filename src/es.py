@@ -8,7 +8,8 @@ def send_to_es(jsonfile:str,esindex:str):
 		data = json.load(f)
 	data = field_to_date(data[:],'issue_date','%m/%d/%Y')
 	es = Elasticsearch()
-	res = es.index(index=esindex, doc_type='violation', id=1,body=data[0])
+	for i in range(len(data)):
+		es.index(index=esindex, doc_type='violation', id=i,body=data[i])
 	
 def field_to_date(listdata:list,fieldname:str,dateformat:str):
 	for row in listdata[:]:
