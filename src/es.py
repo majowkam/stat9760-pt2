@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime as dt
 from elasticsearch import Elasticsearch
 import json
 
@@ -6,13 +6,11 @@ import json
 def send_to_es(jsonfile:str,esindex:str):
 	with open(jsonfile) as f:
 		data = json.load(f)
+	data = field_to_date(data[:],'issue_date','%m/%d/%Y')
 	es = Elasticsearch()
 	res = es.index(index=esindex, doc_type='violation', id=1,body=data[0])
 	
-	
-	"""
-	url = 'http://192.168.99.100:9200'
-	payload = ojson
-	headers = {'content-type': 'application/json', 'Accept-Charset': 'UTF-8'}
-	r = requests.post(url, data=payload, headers=headers)
-	"""
+def field_to_date(listdata:list,fieldname:str,dateformat:str):
+	for row in listdata[:]:
+		row['issue_date'] = dt.strptime(row[fieldname],dateformat)
+	return listdata
