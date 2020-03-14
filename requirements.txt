@@ -1,3 +1,2 @@
 sodapy
 elasticsearch
-requests
