@@ -1,3 +1,4 @@
 docker-compose up -d
-docker-compose run pyth python main.py 500 3
+sleep 60s
+docker-compose run pyth python main.py 10000 2
 #docker-compose down
