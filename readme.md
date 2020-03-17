@@ -11,5 +11,5 @@
 	- docker service is installed and running
 
 # Part 3
-	## Kibana Discover
-	![Discover](/img/Kibana_Discover.png)
+## Kibana Discover
+![Discover](/img/Kibana_Discover.png)
