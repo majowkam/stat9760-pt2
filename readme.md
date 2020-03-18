@@ -16,6 +16,12 @@
 
 ## Kibana Visualize
 ![Visualize1](/img/Kibana_Visualize_StateCounty.png)
+visualizing the count of tickets by county and driver state is interesting because we can expect that counties with neighboring states may show other states with significant violations.
+Here it is interesting to see PA with violations in county K.  It is not clear which county K represents (maybe Staten Island?).
+
+![Visualize2](/img/Kibana_Visualize_State.png)
+This visualization is interesting because we can see what portion of the total violations come from a certain state's drivers.  CT, PA, NJ and NY all make sense, however it is interesting to see Florida with more violations than CT.
+I suspect this may be due to New Yorkers with multi state residences registering their car to Florida for insurance purposes.
 
 ## Kibana Dashboard
 ![Dashboard](/img/Kibana_Dashboard.png)
