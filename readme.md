@@ -15,4 +15,8 @@
 ![Discover](/img/Kibana_Discover.png)
 
 ## Kibana Visualize
+![Visualize1](/img/Kibana_Visualize_StateCounty.png)
+
+## Kibana Dashboard
 ![Dashboard](/img/Kibana_Dashboard.png)
+
