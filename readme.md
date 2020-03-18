@@ -13,3 +13,6 @@
 # Part 3
 ## Kibana Discover
 ![Discover](/img/Kibana_Discover.png)
+
+## Kibana Visualize
+![Dashboard](/img/Kibana_Dashboard.png)
